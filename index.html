@@ -1,0 +1,182 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Barber Shop</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; background: #121212; color: #f0f0f0; }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1595395121337-8c0f495facac?ixlib=rb-4.0.3&q=80&w=1600') center/cover no-repeat;
+      height: 100vh;
+      display: flex; justify-content: center; align-items: center;
+      color: white; text-align: center; flex-direction: column;
+      background-blend-mode: darken;
+    }
+    header h1 { font-size: 3.5rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); }
+    header p { font-size: 1.3rem; margin: 15px 0; }
+    header a { background: #e63946; padding: 12px 25px; border-radius: 30px; text-decoration: none; color: white; font-weight: bold; transition: background 0.3s; }
+    header a:hover { background: #d62828; }
+
+    section { padding: 60px 20px; text-align: center; }
+    h2 { font-size: 2.2rem; margin-bottom: 20px; color: #e63946; }
+
+    .services { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .service {
+      background: #1e1e1e; padding: 20px; border-radius: 12px;
+      width: 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+    .service:hover { transform: translateY(-8px); }
+    .service h3 { margin-bottom: 10px; color: #f0f0f0; }
+    .service p { color: #aaa; }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
+    .gallery img { width: 100%; border-radius: 10px; transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+
+    .barber {
+      max-width: 600px; margin: auto; background: #1e1e1e; padding: 30px;
+      border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+    .barber img { width: 160px; height: 160px; border-radius: 50%; margin-bottom: 15px; object-fit: cover; border: 3px solid #e63946; }
+    .barber h3 { margin: 10px 0; font-size: 1.8rem; color: #f0f0f0; }
+    .barber p { font-size: 1.1rem; color: #ccc; }
+
+    .contact { background: #1a1a1a; color: white; padding: 50px 20px; }
+    .contact p { margin: 10px 0; }
+    .contact a { color: #e63946; text-decoration: none; font-weight: bold; }
+
+    .booking-form {
+      max-width: 500px; margin: 30px auto; background: #1e1e1e; padding: 25px;
+      border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.6); text-align: left;
+    }
+    .booking-form label { display: block; margin: 10px 0 5px; font-weight: bold; color: #f0f0f0; }
+    .booking-form input, .booking-form select {
+      width: 100%; padding: 10px; margin-bottom: 15px;
+      border: 1px solid #333; border-radius: 8px;
+      background: #2a2a2a; color: white;
+    }
+    .booking-form button {
+      width: 100%; padding: 12px; border: none; border-radius: 30px;
+      background: #e63946; color: white; font-size: 1rem; font-weight: bold;
+      cursor: pointer; transition: background 0.3s;
+    }
+    .booking-form button:hover { background: #d62828; }
+
+    footer { background: #0d0d0d; color: #777; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Classic Barber Shop</h1>
+    <p>Sharp Cuts. Fresh Styles. Real Confidence.</p>
+    <a href="#booking">Book Now</a>
+  </header>
+
+  <!-- Services -->
+  <section>
+    <h2>💈 Services</h2>
+    <div class="services">
+      <div class="service"><h3>Haircut</h3><p>₱70</p></div>
+      <div class="service"><h3>Beard Trim</h3><p>ADDITIONAL ₱20</p></div>
+      
+      
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>📸 Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1581092334356-7c1d04e58e1d?w=800" alt="Cut 1">
+      <img src="https://images.unsplash.com/photo-1603079842078-1811bf1e71f1?w=800" alt="Cut 2">
+      <img src="https://images.unsplash.com/photo-1573497491763-4d9b6c1f25b4?w=800" alt="Cut 3">
+    </div>
+  </section>
+
+  <!-- Barber Profile -->
+  <section>
+    <h2>👨&zwj;🔧 Your Barber</h2>
+    <div class="barber">
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="May be an image of 1 person and phone" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/519409079_1181346330696971_6021804611601477561_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=0Iv2HruyxjgQ7kNvwFanKtr&amp;_nc_oc=AdnqZBlmxg-YVIas5ENT941c8WGLiqaPnbx4QKZ6nSzeWj39fmRHApUtkTkhpBUQH_k&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=gf1-8sw9zzr6VCbnmbHOzQ&amp;oh=00_AfZCFbC5bu6YsCCwSAxy3pD-xwBFTPPtgbiOKd04fDitEQ&amp;oe=68E47B5E">
+      <h3>Josh Peligrino</h3>
+      <p>Owner</p>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking">
+    <h2>📅 Book an Appointment</h2>
+    <div class="booking-form">
+      <form id="messengerForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required="">
+
+        <label for="service">Service</label>
+        <select id="service" required="">
+          <option value="Haircut">Haircut</option>
+          <option value="Beard Trim">Beard Trim</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" required="">
+
+        <button type="submit">Send to Messenger</button><script>
+document.getElementById("messengerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const service = document.getElementById("service").value;
+  const date = document.getElementById("date").value;
+
+  // Prepare a URL-safe message
+  const message = encodeURIComponent(`Booking Request:
+Name: ${name}
+Service: ${service}
+Date: ${date}`);
+
+  // Open your Messenger link with the message
+  const messengerLink = `https://www.messenger.com/t/690448137371624?ref=${message}`;
+  window.open(messengerLink, "_blank");
+});
+</script>
+
+
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>📞 Contact</h2>
+    <p>📍  Gusa, Cagayan De Oro City, Philippines</p>
+    <p>📱SMART <a href="tel:+639123456789">+63 912 345 6789</a></p>
+    <p>🕒 Open Every SAT-SUN: 9AM – 8PM</p>
+    <a href="https://m.me/YOUR_PAGE_ID" target="_blank">💬 Message on Facebook</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Classic Barber Shop | Built with ❤️</p>
+  </footer>
+
+  <script>
+    document.getElementById("messengerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
+
+      // replace YOUR_PAGE_ID with your actual Facebook Page ID or username
+      const messengerLink = `https://m.me/YOUR_PAGE_ID?ref=Booking%20Request:%20${name},%20Service:%20${service},%20Date:%20${date}`;
+      window.open(messengerLink, "_blank");
+    });
+  </script>
+
+
+
+</body></html>
