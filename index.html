@@ -162,21 +162,27 @@ Date: ${date}`);
     <p>© 2025 JOSH PELIGRO | BARBERSHOP</p>
   </footer>
 
-  <script>
-    document.getElementById("messengerForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const name = document.getElementById("name").value;
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
+<script>
+  document.getElementById("messengerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-      // replace YOUR_PAGE_ID with your actual Facebook Page ID or username
-      const messengerLink = `https://m.me/https://www.facebook.com/pakyuninyong.tanan?ref=Booking%20Request:%20${name},%20Service:%20${service},%20Date:%20${date}`;
-      window.open(messengerLink, "_blank");
-    });
-  </script>
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+
+    // Encode safely for URL
+    const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // Use your page username here
+    const messengerLink = `https://m.me/pakyuninyong.tanan?ref=${encodedMessage}`;
+    window.open(messengerLink, "_blank");
+  });
+</script>
 
 
 
 
 </body></html>
+
 
