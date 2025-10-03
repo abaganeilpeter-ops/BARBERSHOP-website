@@ -151,23 +151,26 @@
   </footer>
 
   <!-- Messenger Form Script -->
-  <script>
-    document.getElementById("messengerForm").addEventListener("submit", function(e) {
-      e.preventDefault();
+ <script>
+  document.getElementById("messengerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-      const name = document.getElementById("name").value;
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
 
-      const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
-      const encodedMessage = encodeURIComponent(message);
+    const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
+    const encodedMessage = encodeURIComponent(message);
 
-      const messengerLink = `https://www.facebook.com/messages/t/577328962133261?ref=${encodedMessage}`;
-      window.open(messengerLink, "_blank");
-    });
-  </script>
+    // ✅ Fixed Messenger link with text
+    const messengerLink = `https://m.me/577328962133261?text=${encodedMessage}`;
+    window.open(messengerLink, "_blank");
+  });
+</script>
+
 
 
 
 </body></html>
+
 
