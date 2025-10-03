@@ -82,8 +82,6 @@
     <h2>💈 Services</h2>
     <div class="services">
       <div class="service"><h3>Haircut</h3><p>₱70</p></div>
-      
-      
     </div>
   </section>
 
@@ -101,7 +99,7 @@
   <section>
     <h2>👨&zwj;🔧 Your Barber</h2>
     <div class="barber">
-      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="May be an image of 1 person and phone" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/519409079_1181346330696971_6021804611601477561_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=0Iv2HruyxjgQ7kNvwFanKtr&amp;_nc_oc=AdnqZBlmxg-YVIas5ENT941c8WGLiqaPnbx4QKZ6nSzeWj39fmRHApUtkTkhpBUQH_k&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=gf1-8sw9zzr6VCbnmbHOzQ&amp;oh=00_AfZCFbC5bu6YsCCwSAxy3pD-xwBFTPPtgbiOKd04fDitEQ&amp;oe=68E47B5E">
+      <img src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/519409079_1181346330696971_6021804611601477561_n.jpg" alt="Josh Peligrino">
       <h3>Josh Peligrino</h3>
       <p>Owner</p>
     </div>
@@ -113,38 +111,17 @@
     <div class="booking-form">
       <form id="messengerForm">
         <label for="name">Your Name</label>
-        <input type="text" id="name" required="">
+        <input type="text" id="name" required>
 
         <label for="service">Service</label>
-        <select id="service" required="">
+        <select id="service" required>
           <option value="Haircut">Haircut</option>
         </select>
 
         <label for="date">Preferred Date</label>
-        <input type="date" id="date" required="">
+        <input type="date" id="date" required>
 
-        <button type="submit">Send to Messenger</button><script>
-document.getElementById("messengerForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const service = document.getElementById("service").value;
-  const date = document.getElementById("date").value;
-
-  // Prepare a URL-safe message
-  const message = encodeURIComponent(`Booking Request:
-Name: ${name}
-Service: ${service}
-Date: ${date}`);
-
-  // Open your Messenger link with the message
-  const messengerLink = `https://www.messenger.com/t/690448137371624?ref=${message}`;
-  window.open(messengerLink, "_blank");
-});
-</script>
-
-
-
+        <button type="submit">Send to Messenger</button>
       </form>
     </div>
   </section>
@@ -155,34 +132,29 @@ Date: ${date}`);
     <p>📍  Gusa, Cagayan De Oro City, Philippines</p>
     <p>📱SMART <a href="tel:+639123456789">+63 912 345 6789</a></p>
     <p>🕒 Open Every SAT-SUN: 9AM – 8PM</p>
-    <a href="https://m.me/YOUR_PAGE_ID" target="_blank">💬 Message on Facebook</a>
+    <a href="https://m.me/pakyuninyong.tanan" target="_blank">💬 Message on Facebook</a>
   </section>
 
   <footer>
     <p>© 2025 JOSH PELIGRO | BARBERSHOP</p>
   </footer>
 
-<script>
-  document.getElementById("messengerForm").addEventListener("submit", function(e) {
-    e.preventDefault();
+  <!-- Messenger Form Script -->
+  <script>
+    document.getElementById("messengerForm").addEventListener("submit", function(e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const service = document.getElementById("service").value;
-    const date = document.getElementById("date").value;
+      const name = document.getElementById("name").value;
+      const service = document.getElementById("service").value;
+      const date = document.getElementById("date").value;
 
-    // Encode safely for URL
-    const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
-    const encodedMessage = encodeURIComponent(message);
+      const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
+      const encodedMessage = encodeURIComponent(message);
 
-    // Use your page username here
-    const messengerLink = `https://m.me/pakyuninyong.tanan?ref=${encodedMessage}`;
-    window.open(messengerLink, "_blank");
-  });
-</script>
-
-
-
+      // Replace with your actual page username or ID
+      const messengerLink = `https://m.me/pakyuninyong.tanan?ref=${encodedMessage}`;
+      window.open(messengerLink, "_blank");
+    });
+  </script>
 
 </body></html>
-
-
