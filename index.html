@@ -118,26 +118,57 @@
   </section>
 
   <!-- Booking Form -->
-  <section id="booking">
-    <h2>📅 Book an Appointment</h2>
-    <div class="booking-form">
-      <form id="messengerForm">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" required="">
+  <!-- Booking Form -->
+<section id="booking">
+  <h2>📅 Book an Appointment</h2>
+  <div class="booking-form">
+    <form id="messengerForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required="">
 
-        <label for="service">Service</label>
-        <select id="service" required="">
-          <option value="Shop Only">Shop only</option>
-          <option value="Home Service">Home Service</option>
-        </select>
+      <label for="service">Service</label>
+      <select id="service" required="">
+        <option value="Shop Only">Shop Only</option>
+        <option value="Home Service">Home Service</option>
+      </select>
+
+      <label for="day">Preferred Day</label>
+      <select id="day" required="">
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <button type="submit">Send to Messenger</button>
+    </form>
+  </div>
+</section>
+
+<!-- Messenger Form Script -->
+<script>
+  document.getElementById("messengerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const day = document.getElementById("day").value;
+
+    const message = `Booking Request:\nName: ${name}\nService: ${service}\nPreferred Day: ${day}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // ✅ Messenger link with text message prefilled
+    const messengerLink = `https://m.me/577328962133261?text=${encodedMessage}`;
+    window.open(messengerLink, "_blank");
+  });
+</script>
 
         
         
 
         <button type="submit">Send to Messenger</button>
-      </form>
-    </div>
-  </section>
+      
+    
+  
 
   <!-- Contact -->
   <section id="contact" class="contact">
