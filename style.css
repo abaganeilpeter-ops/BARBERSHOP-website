@@ -31,8 +31,19 @@
     .service h3 { margin-bottom: 10px; color: #f0f0f0; }
     .service p { color: #aaa; }
 
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; }
-    .gallery img { width: 100%; border-radius: 10px; transition: transform 0.3s; }
+    /* Clean gallery */
+    .gallery { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+      gap: 15px; 
+    }
+    .gallery img { 
+      width: 100%; 
+      height: 250px; 
+      border-radius: 10px; 
+      object-fit: cover; 
+      transition: transform 0.3s; 
+    }
     .gallery img:hover { transform: scale(1.05); }
 
     .barber {
@@ -67,12 +78,12 @@
 
     footer { background: #0d0d0d; color: #777; text-align: center; padding: 20px; }
   </style>
-</head>
+<script id="usi_AJAXScript1" type="text/javascript" src="https://www.upsellit.com/load.jsp?id=11424173027985667047526&amp;sid=60125&amp;cid=144325&amp;url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbarber-black-background&amp;lm=1"></script><script id="usi_AJAXScript2" type="text/javascript" src="https://www.upsellit.com/load.jsp?id=11424173027985667047526&amp;sid=60125&amp;cid=144325&amp;url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbarber-black-background&amp;lm=1"></script><script id="usi_AJAXScript3" type="text/javascript" src="https://www.upsellit.com/load.jsp?id=11424173027985667047526&amp;sid=60125&amp;cid=144325&amp;url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbarber-black-background&amp;lm=1"></script><script id="usi_AJAXScript4" type="text/javascript" src="https://www.upsellit.com/load.jsp?id=11424173027985667047526&amp;sid=60125&amp;cid=144325&amp;url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fbarber-black-background&amp;lm=1"></script></head>
 <body>
 
   <!-- Hero -->
   <header>
-    <h1>Classic Barber Shop</h1>
+    <h1>Shay Crisp Blendsz</h1>
     <p>Sharp Cuts. Fresh Styles. Real Confidence.</p>
     <a href="#booking">Book Now</a>
   </header>
@@ -81,10 +92,8 @@
   <section>
     <h2>💈 Services</h2>
     <div class="services">
-      <div class="service"><h3>Haircut</h3><p>₱70</p></div>
-      <div class="service"><h3>Beard Trim</h3><p>ADDITIONAL ₱20</p></div>
       
-      
+      <div class="service"><h3>Shop only</h3><p>₱80</p></div><div class="service"><h3>Home Service</h3><p>₱150 minimum</p></div>
     </div>
   </section>
 
@@ -92,9 +101,9 @@
   <section>
     <h2>📸 Gallery</h2>
     <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1581092334356-7c1d04e58e1d?w=800" alt="Cut 1">
-      <img src="https://images.unsplash.com/photo-1603079842078-1811bf1e71f1?w=800" alt="Cut 2">
-      <img src="https://images.unsplash.com/photo-1573497491763-4d9b6c1f25b4?w=800" alt="Cut 3">
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="May be an image of 2 people" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/546613859_122139486290813754_295326407272759457_n.jpg?_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_ohc=HZhnSfiDFfYQ7kNvwFuVYqC&amp;_nc_oc=Adm7modDPBHclq0hDVOzFcg34ayjs59zt6H-28_QX6WXR7QRecxRrjfRSxDshRm3X0A&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=Af2knQhqZRxDYZRMdSO4qA&amp;oh=00_AfdMV32tS13ZdsyNIf7FVUVA4sJvNcoVkIpqdEXqhsVsqw&amp;oe=68E51886">
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="No photo description available." referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/495555182_122120409848813754_4734561167146580185_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_ohc=VjGQ_SNbvAEQ7kNvwF5YAZQ&amp;_nc_oc=AdnlvnMtdemz1xMO-arwEPlf3TWvH0fzXgUXqTu2pJU8kbK52yIm2nMr2HUM63ncCt8&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=6aYX3pL5mf5oVhcKnP_Bbg&amp;oh=00_AfcyfRJ6KP6Yv8GYbZNhuLK-UHpr7TgduCR1Lahj862FQQ&amp;oe=68E52814">
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="No photo description available." referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/492360849_122118152042813754_9131003655623587365_n.jpg?stp=cp6_dst-jpg_tt6&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=833d8c&amp;_nc_ohc=xLdx8Y10wfsQ7kNvwFd_8l_&amp;_nc_oc=Adl6GReSPh4x373-eDr-TZ_I-6RrXrcDcXrPGWZuU_pNZpfkLf9MwPQr6kGKsfWgRIM&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=qhBJGGyDmxuo3wIOUVqQUg&amp;oh=00_Affe410lGrxfcylaj2vRC_xgd65yRqn3KW4LYTO_oVTImQ&amp;oe=68E517BA">
     </div>
   </section>
 
@@ -102,8 +111,8 @@
   <section>
     <h2>👨&zwj;🔧 Your Barber</h2>
     <div class="barber">
-      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="May be an image of 1 person and phone" referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/519409079_1181346330696971_6021804611601477561_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=0Iv2HruyxjgQ7kNvwFanKtr&amp;_nc_oc=AdnqZBlmxg-YVIas5ENT941c8WGLiqaPnbx4QKZ6nSzeWj39fmRHApUtkTkhpBUQH_k&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=gf1-8sw9zzr6VCbnmbHOzQ&amp;oh=00_AfZCFbC5bu6YsCCwSAxy3pD-xwBFTPPtgbiOKd04fDitEQ&amp;oe=68E47B5E">
-      <h3>Josh Peligrino</h3>
+      <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="No photo description available." referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/485767424_1059085229589749_1005967988291876604_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=_lralVnj9UIQ7kNvwFwRjLy&amp;_nc_oc=Adl7UOyJT0tHJD7KhR4Rj3Smv906zCGoky0RFS7tcpYzdQZ2314kjosT1v5ZG5VxqAI&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=e08attvKi-3cV9UHUGmkqQ&amp;oh=00_AfdHPHCqMhq7Hqf0zLyEUkleaL0A3rZogmldZs1D5EkbLw&amp;oe=68E51C27">
+      <h3>Shay</h3>
       <p>Owner</p>
     </div>
   </section>
@@ -118,12 +127,12 @@
 
         <label for="service">Service</label>
         <select id="service" required="">
-          <option value="Haircut">Haircut</option>
-          <option value="Beard Trim">Beard Trim</option>
+          <option value="Shop Only">Shop only</option>
+          <option value="Home Service">Home Service</option>
         </select>
 
-        <label for="date">Preferred Date</label>
-        <input type="date" id="date" required="">
+        
+        
 
         <button type="submit">Send to Messenger</button>
       </form>
@@ -133,28 +142,43 @@
   <!-- Contact -->
   <section id="contact" class="contact">
     <h2>📞 Contact</h2>
-    <p>📍  Gusa, Cagayan De Oro City, Philippines</p>
-    <p>📱SMART <a href="tel:+639123456789">+63 912 345 6789</a></p>
-    <p>🕒 Open Every SAT-SUN: 9AM – 8PM</p>
-    <a href="https://m.me/YOUR_PAGE_ID" target="_blank">💬 Message on Facebook</a>
+    <p>📍Purok 12 Baloy, Tablon Cagayan De Oro city.
+
+
+Pasulod Coconutbay beach resort</p>
+    <p>📱TnT <a href="Tel:">+09637052210</a></p>
+    <p>🕒 Open Every FRI: 7pm to 11pm and SAT: 1pm to 11pm SUN: 12nn to 1pm</p>
+    <a href="https://www.facebook.com/profile.php?id=61574412624578&amp;mibextid=wwXIfr&amp;rdid=q79lmF4qExgog0H3&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BDC6LQQvo%2F%3Fmibextid%3DwwXIfr#" target="_blank">💬 View on Facebook</a>
   </section>
 
   <footer>
-    <p>© 2025 Classic Barber Shop | Built with ❤️</p>
+    <p>© 2025 JOSH PELIGRO | BARBERSHOP</p>
   </footer>
 
-  <script>
-    document.getElementById("messengerForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const name = document.getElementById("name").value;
-      const service = document.getElementById("service").value;
-      const date = document.getElementById("date").value;
+  <!-- Messenger Form Script -->
+ <script>
+  document.getElementById("messengerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-      // replace YOUR_PAGE_ID with your actual Facebook Page ID or username
-      const messengerLink = `https://m.me/YOUR_PAGE_ID?ref=Booking%20Request:%20${name},%20Service:%20${service},%20Date:%20${date}`;
-      window.open(messengerLink, "_blank");
-    });
-  </script>
+    const name = document.getElementById("name").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+
+    const message = `Booking Request:\nName: ${name}\nService: ${service}\nDate: ${date}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // ✅ Fixed Messenger link with text
+    const messengerLink = `https://m.me/577328962133261?text=${encodedMessage}`;
+    window.open(messengerLink, "_blank");
+  });
+</script>
+
+
+
+
+
+
+
 
 
 
