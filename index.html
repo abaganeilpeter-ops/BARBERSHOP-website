@@ -112,71 +112,43 @@
     <h2>👨&zwj;🔧 Your Barber</h2>
     <div class="barber">
       <img data-visualcompletion="media-vc-image" class="x15mokao x1ga7v0g x16uus16 xbiv7yw x1bwycvy x193iq5w x4fas0m x19kjcj4" alt="No photo description available." referrerpolicy="origin-when-cross-origin" src="https://scontent.fcgm1-1.fna.fbcdn.net/v/t39.30808-6/485767424_1059085229589749_1005967988291876604_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=a5f93a&amp;_nc_ohc=_lralVnj9UIQ7kNvwFwRjLy&amp;_nc_oc=Adl7UOyJT0tHJD7KhR4Rj3Smv906zCGoky0RFS7tcpYzdQZ2314kjosT1v5ZG5VxqAI&amp;_nc_zt=23&amp;_nc_ht=scontent.fcgm1-1.fna&amp;_nc_gid=e08attvKi-3cV9UHUGmkqQ&amp;oh=00_AfdHPHCqMhq7Hqf0zLyEUkleaL0A3rZogmldZs1D5EkbLw&amp;oe=68E51C27">
-      <h3>Josh Peligrino</h3>
+      <h3>Shay</h3>
       <p>Owner</p>
     </div>
   </section>
 
   <!-- Booking Form -->
-  <!-- Booking Form -->
-<section id="booking">
-  <h2>📅 Book an Appointment</h2>
-  <div class="booking-form">
-    <form id="messengerForm">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" required="">
+  <section id="booking">
+    <h2>📅 Book an Appointment</h2>
+    <div class="booking-form">
+      <form id="messengerForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required="">
 
-      <label for="service">Service</label>
-      <select id="service" required="">
-        <option value="Shop Only">Shop Only</option>
-        <option value="Home Service">Home Service</option>
-      </select>
-
-      <label for="day">Preferred Day</label>
-      <select id="day" required="">
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-        <option value="Sunday">Sunday</option>
-      </select>
-
-      <button type="submit">Send to Messenger</button>
-    </form>
-  </div>
-</section>
-
-<!-- Messenger Form Script -->
-<script>
-  document.getElementById("messengerForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const service = document.getElementById("service").value;
-    const day = document.getElementById("day").value;
-
-    const message = `Booking Request:\nName: ${name}\nService: ${service}\nPreferred Day: ${day}`;
-    const encodedMessage = encodeURIComponent(message);
-
-    // ✅ Messenger link with text message prefilled
-    const messengerLink = `https://m.me/577328962133261?text=${encodedMessage}`;
-    window.open(messengerLink, "_blank");
-  });
-</script>
+        <label for="service">Service</label>
+        <select id="service" required="">
+          <option value="Shop Only">Shop only</option>
+          <option value="Home Service">Home Service</option>
+        </select>
 
         
         
 
         <button type="submit">Send to Messenger</button>
-      
-    
-  
+      </form>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
     <h2>📞 Contact</h2>
-    <p>📍 Gusa, Cagayan De Oro City, Philippines</p>
+    <p>📍Purok 12 Baloy, Tablon Cagayan De Oro city.
+
+
+Pasulod Coconutbay beach resort</p>
     <p>📱TnT <a href="Tel:">+09637052210</a></p>
-    <p>🕒 Open Every FRI 7pm to 11pm and SAT-SUN: 9AM to 8PM</p>
-    <a href="https://m.me/pakyuninyong.tanan" target="_blank">💬 Message on Facebook</a>
+    <p>🕒 Open Every FRI: 7pm to 11pm and SAT: 1pm to 11pm SUN: 12nn to 1pm</p>
+    <a href="https://www.facebook.com/profile.php?id=61574412624578&amp;mibextid=wwXIfr&amp;rdid=q79lmF4qExgog0H3&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BDC6LQQvo%2F%3Fmibextid%3DwwXIfr#" target="_blank">💬 View on Facebook</a>
   </section>
 
   <footer>
@@ -200,6 +172,7 @@
     window.open(messengerLink, "_blank");
   });
 </script>
+
 
 
 
